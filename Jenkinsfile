@@ -8,7 +8,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        git 'python test.py'
+        bat 'python test.py'
       }   
     }
   }
