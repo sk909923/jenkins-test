@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'python calculator.py'
+        bat 'python calculator.py'
       }
     }
     stage('test') {
       steps {
-        sh 'python test.py'
+        git 'python test.py'
       }   
     }
   }
